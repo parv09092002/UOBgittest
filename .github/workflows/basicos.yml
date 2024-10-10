@@ -58,4 +58,10 @@ jobs:
         webhook: ${{ secrets.DISCORD_SECRET }}
         message: ${{ github.repository }} has been successfully deployed.
 
+    - name: Deploy to Github pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./ 
+
     
