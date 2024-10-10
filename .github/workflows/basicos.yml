@@ -37,19 +37,19 @@ jobs:
       run: |
         pytest
 
-    - name: Checkout Hidden Repo
-      uses: actions/checkout@v4
-      with:
-        repository: parv09092002/UOBHidden 
-        path: hiddenfolder
-        token: ${{ secrets.SECRETUOB}}
+    #- name: Checkout Hidden Repo#
+     # uses: actions/checkout@v4#
+      #with:#
+       # repository: parv09092002/UOBHidden #
+        #path: hiddenfolder#
+        #token: ${{ secrets.SECRETUOB}}#
 
-    - name: print out hidden things
-      run: |
-        ls
-        cd hiddenfolder
-        ls
-        cat text.txt
+    #- name: print out hidden things#
+      #run: |#
+      #  ls#
+       # cd hiddenfolder#
+        #ls#
+       # cat text.txt#
 
 
     - name: discord
