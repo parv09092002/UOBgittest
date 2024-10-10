@@ -55,7 +55,7 @@ jobs:
     - name: discord
       uses: sebastianpopp/discord-action@releases/v2
       with:
-        webhook: ${{ secrets.DISCORD_WEBHOOK }}
+        webhook: ${{ secrets.DISCORD_SECRET }}
         message: ${{ github.repository }} has been successfully deployed.
 
     
